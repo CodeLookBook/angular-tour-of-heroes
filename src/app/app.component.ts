@@ -26,6 +26,11 @@ const HEROES: Hero[] = [
   selector: 'my-app',
   template: `
       <h1>{{title}}</h1>
+      <h2>My Heroes</h2>
+      <ul class="heroes">
+        <li>
+        </li>
+      </ul>   
       <h2>{{hero.name}} details!</h2>
       <div><label>id:</label>{{hero.id}}</div>
       <div>
