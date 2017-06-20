@@ -5,6 +5,10 @@ export class Hero {
   name: string;
 }
 
+/**
+ * The hero data is separated from the class implementation because ultimately
+ * the hero names will come from a data service.
+ */
 const HEROES: Hero[] = [
   { id: 11, name: 'Mr. Nice' },
   { id: 12, name: 'Narco' },
@@ -37,4 +41,5 @@ export class AppComponent  {
     id: 1,
     name: 'Windstorm',
   };
+  heroes = HEROES;
 }
