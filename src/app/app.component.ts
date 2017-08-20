@@ -1,4 +1,6 @@
-import {Component} from "@angular/core";
+import {Component} from '@angular/core';
+import { Hero } from './hero';
+
 
 /**
  * The hero data is separated from the class implementation because ultimately
