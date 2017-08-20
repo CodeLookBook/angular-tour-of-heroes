@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 import { Hero } from './hero';
 
-
 /**
  * The hero data is separated from the class implementation because ultimately
  * the hero names will come from a data service.
@@ -31,6 +30,7 @@ const HEROES: Hero[] = [
             <span class="badge">{{hero.id}}</span> {{hero.name}}
         </li>
       </ul>
+      <hero-detail [hero]="selectedHero"></hero-detail>
   `,
   styles: [`
       .selected {
