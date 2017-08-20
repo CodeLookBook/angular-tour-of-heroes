@@ -1,10 +1,5 @@
 import {Component} from "@angular/core";
 
-export class Hero {
-  id: number;
-  name: string;
-}
-
 /**
  * The hero data is separated from the class implementation because ultimately
  * the hero names will come from a data service.
