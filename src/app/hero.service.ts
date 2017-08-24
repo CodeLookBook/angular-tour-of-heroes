@@ -17,7 +17,7 @@ export class HeroService {
     }
     getHero(id: number): Promise<Hero> {
         const url = `${this.heroesUrl}/${id}`;
-        this.http.get(url)
+        return this.http.get(url)
             .toPromise()
             .then(responce => responce.json().data as Hero)
             .catch(this.handleError);
