@@ -3,6 +3,8 @@ import { Headers, Http } from '@angular/http';
 
 import { Hero } from './hero';
 
+import 'rxjs/add/operator/toPromise';
+
 @Injectable()
 export class HeroService {
     private heroesUrl = 'api/heroes';  // URL to web api
